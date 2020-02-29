@@ -1,2 +1,0 @@
-# -
-homework of Database Principle
