@@ -93,7 +93,7 @@ Oracle 前身叫SDL，由Larry Ellison 和另两个编程人员在1977创办，�
 
 解决方案对开发商全力支持
 Oracle 多层次网络计算支持多种工业标准用ODBC、JDBC、OCI等网络客户连接 
-  - 对硬件的要求很高；
+  -- 对硬件的要求很高；
 价格比较昂贵；
 管理维护麻烦一些；较复杂, 同时提供GUI和命令行，在Windows NT和Unix， Linux 下操作相同。对数
 
