@@ -63,7 +63,7 @@ SQL Server可以与Windows操作系统紧密集成，不论是应用程序开发
 行管理费用较高。
 
 
-###IBM 的DB2
+### IBM 的DB2
 - 说明
 
 DB2是IBM著名的关系型数据库产品，DB2系统在企业级的应用中十分广泛。最近推出的DB2 Universal 
@@ -77,7 +77,7 @@ Linux在内的一系列平台。
 
 端支持及应用模式。
  
-###Oracle
+### Oracle
 - 说明
 Oracle 前身叫SDL，由Larry Ellison 和另两个编程人员在1977创办，他们开发了自己的拳头产品，在
 
@@ -97,7 +97,7 @@ Oracle 多层次网络计算支持多种工业标准用ODBC、JDBC、OCI等网�
 
 据库管理人员要求较高。 
 
-###mySQL
+### mySQL
 - 说明
 
 mySQL是一个小型关系型数据库管理系统，开发者为瑞典MySQL AB公司。目前MySQL被广泛地应用在
