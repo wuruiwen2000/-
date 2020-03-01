@@ -30,6 +30,7 @@ SQL Server可以与Windows操作系统紧密集成，不论是应用程序开发
 
 客户机/服务器）架构还是B/S（浏览器/服务器）架构，SQL Server都是一个很好的选择。 
 
+
   - SQL Server的缺点是只能在Windows系统下运行，没有丝毫的开放性，而且windows平台的可靠性，安全
 
 性和伸缩性是非常有限的。因此Windows9X系列产品是偏重于桌面应用，NT server则适合各种大中小型
