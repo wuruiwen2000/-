@@ -12,7 +12,7 @@
 
 合。
 ### SQL Server
-- 说明:
+- 说明 
 Microsoft SQL Server是微软公司开发的大型关系型数据库系统。微软同Sybase 签订了合作协议，使
 
 用Sybase的技术开发基于OS/2平台的关系型数据库。1989年，微软发布了SQL Server 1.0 版。 
@@ -34,7 +34,7 @@ SQL Server的缺点是只能在Windows系统下运行，没有丝毫的开放性
 型企业。 
 
 ### Sybase
--说明
+-说明 
 美国Sybase公司研制的一种关系型数据库系统，是一种典型的UNIX或WindowsNT平台上客户机/服
 
 务器环境下的大型数据库系统。Sybase通常与SybaseSQLAnywhere用于客户机/服务器环境，前者作为服
