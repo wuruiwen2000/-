@@ -32,7 +32,8 @@ SQL Server的缺点是只能在Windows系统下运行，没有丝毫的开放性
 性和伸缩性是非常有限的。因此Windows9X系列产品是偏重于桌面应用，NT server则适合各种大中小型
 
 型企业。 
-2. Sybase
+
+### Sybase
 说明：美国Sybase公司研制的一种关系型数据库系统，是一种典型的UNIX或WindowsNT平台上客户机/服
 
 务器环境下的大型数据库系统。Sybase通常与SybaseSQLAnywhere用于客户机/服务器环境，前者作为服
