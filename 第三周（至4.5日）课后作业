@@ -1,1 +1,159 @@
 找出每类朋友最多的人
+
+
+
+
+
+
+//找出只在一个类别里面出现的人
+with cte as(
+select friend1 as person,relationship
+from acquaintance
+union
+select friend2,relationship
+from acquaintance
+)
+select set from cte t1 where not exists
+(select * from cte where set=t1.set
+and relationship<>t1.relationship);
+
+//将两个select联合起来
+select friend1 as person,relationship
+from acquaintance
+union
+select friend2 as person,relationship
+from acquaintance;
+
+//从中选出person来
+with cte as(
+select friend1 as person,relationship
+from acquaintance
+union
+select friend2,relationship
+from acquaintance)
+select person from cte;
+
+select friend1 as person
+from acquaintance
+where (select friend1 as person,relationship
+from acquaintance
+union
+select friend2,relationship
+from acquaintance);
+
+with table1 as
+(select friend1 as person,relationship
+from acquaintance
+
+select friend2,relationship
+from acquaintance)
+select * from table1
+where table1=friend;
+
+//创建临时表
+create temporary table table1 as
+(
+select friend1 as person,relationship
+from acquaintance,
+select friend2,relationship
+from acquaintance
+);
+
+select person 
+from table1
+where
+//relationship的数量只有1
+
+
+//查找每个人对应的relationship的数量
+select count(relationship)
+from table1;
+
+create temporary tabe table2 as
+(
+select person
+from table1
+where
+
+
+
+//得出表后找到一个人有几种类别
+select count(relationship)
+from table1
+where 
+
+
+
+
+
+create temporary table table1 as
+(
+select friend1 as person,relationship
+from acquaintance
+);
+
+select friend2,relationship
+into ##table1(person,relationship)
+from acquaintance;
+
+
+
+//先解决查找数量的问题
+create temporary table table2 as
+(select friend2 as person,relationship
+from acquaintance);
+
+
+
+//如果class不同
+//首先需要有两个表
+create temporary table table2_copy as
+(select friend2 as person,relationship
+from acquaintance);
+
+create temporary table table1_copy as
+(select friend1 as person,relationship
+from acquaintance);
+
+//选择不能有不同class的地方
+
+select person
+from table2
+where not exists(
+select * from table2
+where person=table2_copy.person
+and
+relationship!=table2_copy.relationship);
+
+
+select person
+from table1_copy
+where not exists(
+select * from table1_copy
+where person=table1.person
+and
+relationship!=table1.relationship);
+
+
+
+
+select relationship
+from table2.copy
+
+select person
+from table2
+where
+person=table2_copy.person
+
+
+
+
+
+;
+
+
+
+
+
+
+
