@@ -33,4 +33,11 @@ where friend2='4'));
 //找出所拥有的朋友的最大值，即出现的最多次数
 
 
+//找出同一个类别的人
+select friend2
+from acquaintance
+where relationship='A';
+
+
+
 
