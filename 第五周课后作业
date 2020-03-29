@@ -39,5 +39,14 @@ from acquaintance
 where relationship='A';
 
 
+//求一个人在所有里面出现的次数
+select friend1,friend2
+from acquaintance
+where
+这个人是“ ”；
 
+SQL如何查询出某一列中不同值出现的次数？
+select friend1,count(relationship)
+from acquaintance
+group by friend1;
 
