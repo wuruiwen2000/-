@@ -151,6 +151,120 @@ person=table2_copy.person
 
 ;
 
+##//第二步：
+将其放入一个表中
+(两种方法）
+1.创建表
+create temporary table table_temp
+(
+person varchar(10),
+relationship varchar(5));
+2.插入数据
+insert into table_temp
+(
+select friend1,relationship
+from acquaintance
+);
+insert into table_temp
+(
+select friend2,relationship
+from acquaintance
+);
+
+//第三步：
+从表中找出class不相同的
+1.构造相同的表(其中一个必须是长期的而非暂时的）
+create table table_temp_copy
+(
+person varchar(10),
+relationship varchar(5));
+insert into table_temp_copy
+(
+select friend1,relationship
+from acquaintance
+);
+insert into table_temp_copy
+(
+select friend2,relationship
+from acquaintance
+);
+
+create table table_temp
+(
+person varchar(10),
+relationship varchar(5));
+insert into table_temp
+(
+select friend1,relationship
+from acquaintance
+);
+insert into table_temp
+(
+select friend2,relationship
+from acquaintance
+);
+2.开始select
+select person 
+from table_temp
+where not exists
+(
+select * from table_temp
+where 
+person=table_temp_copy.person
+and 
+relationship!=table_temp_copy.relationship)
+;
+
+create temporary table temp_table
+(select friend1 as person,relationship
+from acquaintance,
+union
+select friend2,relationship
+from acquaintance);
+
+
+//全换成正常表试试
+第一个表：t
+create table t
+(
+person varchar(10),
+relationship varchar(5));
+insert into t
+(
+select friend1,relationship
+from acquaintance
+);
+insert into t
+(
+select friend2,relationship
+from acquaintance
+);
+第二个表:t1
+create table t1
+(
+person varchar(10),
+relationship varchar(5));
+insert into t1
+(
+select friend1,relationship
+from acquaintance
+);
+insert into t1
+(
+select friend2,relationship
+from acquaintance
+);
+开始比较：
+select person 
+from t
+where not exists
+(
+select * from t
+where 
+t.person=t1.person
+and 
+relationship!=t1.relationship)
+;
 
 
 
