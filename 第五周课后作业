@@ -1,1 +1,36 @@
+假定表格为熟人表，column分别为friend1,friend2和relationship
 1.查询语句
+//找出在某个类中一个人出现了几次
+select count(friend1)
+as numberoffriends
+from acquaintance
+where friend1='4'
+union
+select count(friend2)
+as numberoffriends
+from acquaintance
+where friend2='4';
+
+//根据最大值找出朋友最多的人
+select friend2
+from acquaintance
+where 
+//次数=最大值
+select count(friend2) as numberoffriends
+from acquaintance
+=
+select max
+(select max(select count(friend1)
+as numberoffriends
+from acquaintance
+where friend1='4'
+union
+select count(friend2)
+as numberoffriends
+from acquaintance
+where friend2='4'));
+
+//找出所拥有的朋友的最大值，即出现的最多次数
+
+
+
