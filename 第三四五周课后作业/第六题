@@ -1,0 +1,156 @@
+（目前还没有考虑有多个人连接度相同的情况）
+6.找出通过他而结识的朋友对最多
+思路：出现几次就有几个朋友对，因此连接度最高的人即为朋友最多的人
+==找出某个字段，该字段在整个熟人表里出现次数最多
+SQL语句:
+
+
+select friend1 as person,count(*)
+as counts
+from acquaintance
+group by friend1
+union
+select friend2 as person,count(*)
+as counts
+from acquaintance
+group by friend2
+order by counts desc
+limit 1
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+和找出每个类别里朋友最多的人很像
+select friend1,friend2
+from acquaintance
+where(
+
+//想要得到的是
+1 几次
+2 几次
+//先把这两个合并起来
+select friend1 as personoccur
+from acquaintance
+union
+select friend2
+from acquaintance;
+
+select friend1,friend2
+from acquaintance
+group by friend1,friend2
+having count(*)=
+(select top1 count(*)
+as counts
+from acquaintance
+group by friend1,friend2
+order by counts desc);
+
+
+//选出该列中某个人出现几次
++选出全部中某个人出现几次
+
+select friend1,friend2
+from acquaintance
+group by friend1,friend2
+having count(*)=
+(
+select friend1 as person,count(*)
+as counts
+from acquaintance
+group by friend1
+union
+select friend2 as person,count(*)
+as counts
+from acquaintance
+group by friend2
+order by counts desc
+limit 1
+)
+;
+
+
+//实验
+select 
+select counts(*),friend1 as person,friend2 as person
+from acuquaintance
+group by friend1,friend2
+order by counts desc;
+
+
+
+//实验：
+select friend1 as personoccur
+from acquaintance
+
+select personoccur,count * from 
+
+4.找出每个类别里都有朋友的人
+
+找出每个类别里朋友
+
+
+
+
+
+1.找出互不认识的人
+
+///最终:找出整个表格中哪个数据出现的次数最多
+select friend1
+from acquaintance
+group by friend1
+having count(*)=
+(
+select count(*)
+as counts
+from acquaintance
+group by friend1
+union
+select count(*)
+as counts
+from acquaintance
+group by friend2
+order by counts desc
+limit 1
+);
+
+找到这个最多次数
+
+
+
+insert into test values(1,'a');
+insert into test values(1,'b');
+insert into test values(1,'f');
+insert into test values(2,'c');
+insert into test values(2,'d');
+insert into test values(3,'e');
+
+
+select count(*)
+as counts
+from acquaintance
+
+
+group by friend1
+union
+select count(*)
+as counts
+from acquaintance
+group by friend2
+order by counts desc
+limit 1;
