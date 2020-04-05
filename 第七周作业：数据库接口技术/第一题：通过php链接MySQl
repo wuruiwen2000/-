@@ -1,5 +1,5 @@
-#1.通过MySQL函数连接MySQL数据库函数
-##PHP文件代码如下：
+# 1.通过MySQL函数连接MySQL数据库函数
+## PHP文件代码如下：
 <?php
 $server="localhost";
 $username="root";
@@ -35,6 +35,6 @@ echo "城市名字:{$row['Name']}  <br> ".
 mysqli_close($link);
 ?>
 
-###需要：XAMPP
-###MySQL和php网页是无法直接连接的，需要XAMPP作为中间项，将Apache和MySQL打开，从而使得我们可以从网页上直接看到数据库连接后的结果
-###写好的网页可以放在hotdocs下面，通过localhost来访问，直接访问localhost/index.php即可
+### 需要：XAMPP
+### MySQL和php网页是无法直接连接的，需要XAMPP作为中间项，将Apache和MySQL打开，从而使得我们可以从网页上直接看到数据库连接后的结果
+### 写好的网页可以放在hotdocs下面，通过localhost来访问，直接访问localhost/index.php即可
