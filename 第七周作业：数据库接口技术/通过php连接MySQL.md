@@ -36,4 +36,4 @@
 ### 需要：XAMPP
 ### MySQL和php网页是无法直接连接的，需要XAMPP作为中间项，将Apache和MySQL打开，从而使得我们可以从网页上直接看到数据库连接后的结果
 ### 写好的网页可以放在hotdocs下面，通过localhost来访问，直接访问localhost/demotest.php即可
-### 简单查询及返回结果如下截图所示：https://github.com/wuruiwen2000/-/blob/master/%E7%AC%AC%E4%B8%83%E5%91%A8%E4%BD%9C%E4%B8%9A%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E9%A2%98%E7%94%A8mysql%E5%87%BD%E6%95%B0%E6%9D%A5%E9%93%BE%E6%8E%A5.PNG
+### 简单查询及返回结果如下截图所示：![image](https://github.com/wuruiwen2000/-/blob/master/%E7%AC%AC%E4%B8%83%E5%91%A8%E4%BD%9C%E4%B8%9A%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E9%A2%98%E7%94%A8mysql%E5%87%BD%E6%95%B0%E6%9D%A5%E9%93%BE%E6%8E%A5.PNG)
