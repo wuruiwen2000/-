@@ -37,3 +37,5 @@
 ### except pymysql.Error as e:
 ### 	print("数据查询失败:"+str(e))
 ### //其中出现SyntaxError: multiple statements found while compiling a single statement错误，解决办法：逐条执行
+### 返回结果运行截图如下：
+![image]https://github.com/wuruiwen2000/-/blob/master/%E7%AC%AC%E4%B8%83%E5%91%A8%E4%BD%9C%E4%B8%9A%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF/python%E8%BF%9E%E6%8E%A5MYSQL%E8%BF%94%E5%9B%9E%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C.PNG
