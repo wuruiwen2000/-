@@ -15,7 +15,7 @@ d. 配置MySQL连接信息（DataSourceName:localhost/user:root/database:）
 e. 配置好数据源后返回到步骤b的页面，此时需要选择数据源，由于新建的数据源此时还无法进行选择，因此取消此安装流程，重新打开一个新的连接流程即可  
 f. 选择相应数据表  
 g. 选择acquaintance,并进入下一步，指定执行名称为：add_acquaintance  
-h. 完成配置，如图：
+h. 完成配置，如图：![image]https://github.com/wuruiwen2000/-/blob/master/%E7%AC%AC%E4%B8%89%E5%9B%9B%E4%BA%94%E5%91%A8%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C%E5%9B%BE1.png
 
 -- 开始随机生成数据：
 将friednd1设置成长度为1-10的随机字符串  
