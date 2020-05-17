@@ -17,7 +17,7 @@
 #### 将下载的CRX格式的文件修改成Zip格式的文件（方法是显示文件的扩展名之后直接在后面修改）
 #### 用解压缩工具将ZIP格式的文件解压
 #### 解压后得到的文件如下图：
-![image](lecture9课后作业/zip.PNG)
+![image](https://github.com/wuruiwen2000/-/blob/master/lecture9%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/lecture9%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/zip.PNG)
 #### 打开chrome扩展程序管理页面（更多工具->拓展程序),点击“加载已解压的扩展程序”。
 #### 下载phpstorm后
 
@@ -31,9 +31,9 @@
 - READBEAN框架的下载： 
 在(https://redbeanphp.com/index.php?p=/download)网页中下载Download RedBeanPHP 5 mysql,解压后得到一个txt和一个rb-mysql.php
 - 调试及使用：
--- 需要：php
--- 在命令行中输入echo dram.php，notepad.exe dram.php创建php文件
--- 在该php文件中键入测试代码，代码如下：
+- - 需要：php
+- - 在命令行中输入echo dram.php，notepad.exe dram.php创建php文件
+- - 在该php文件中键入测试代码，代码如下：
 require'rb-sql.php';
 R::setup();
 $bean = R::dispense('email');
@@ -42,13 +42,36 @@ $bean->date = date('Y-m-d H:i:s', time());
 $id = R::store($bean);
 $email = R::load('email', $id);
 var_dump($email);
-
-
-
-
-
-
-
+### Python的ORM框架
+- sqlchemy的安装： 
+- - 通过pip语句直接安装：pip install sqlchemy
+- - 安装包安装：通过网址https://docs.sqlalchemy.org/en/13/安装
+- 调试及使用
+- 创建连接对象：
+from sqlalchemy import create_engine # 连接本地test数据库 engine = create_engine("mysql+pymysql://root:root@localhost/test?charset=utf8") 
+- 简单使用：
+result = engine.execute("select * from news")  
+print(result.fetchall()) (1, '本机新闻标题'), (2, '今天的新闻'), (3, '新闻标题1'), (4, '新闻标题2'), (5, '元组新闻1'), (6, '元组新闻2')  
+- 创建映射：
+- - 创建一个infos.py，映射数据表：
+from sqlalchemy.ext.declarative import declarative_base 
+Base = declarative_base() 
+from sqlalchemy import Column, Integer, String 
+class News(Base):   
+#表名称   
+__tablename__ = 'news'  
+#news表里id字段   
+id = Column(Integer, primary_key=True, autoincrement=True)   
+#news表里title字段   
+title = Column(String(length=255), nullable=False) 
+from sqlalchemy import create_engine from mappers.Infos import News 
+from sqlalchemy.orm import sessionmaker 
+#连接本地test数据库 engine = create_engine("mysql+pymysql://root:root@localhost/test?charset=utf8") 
+#创建会话 session = sessionmaker(engine) mySession = session() 
+#查询结果集 
+result = mySession.query(News).all() print(result[0]) 
+- 查询（查询第一条记录）：
+result = mySession.query(News).first() print(result.title) #打印对象属性 
 
 参考：https://www.jianshu.com/p/243168fa358d
 https://www.oschina.net/p/redbeanphp/related?lang=0&p=21&sort=view
