@@ -8,6 +8,7 @@
 
 ### 题目二
 ### 完成php调试工具的安装、配置和使用：
+### 需要：(pycharm),phpstorm(xdebug),chrom xdebug helper
 ### Xdebug helper chrome插件的安装：
 #### 从插件下载地址：http://www.cnplugins.com/devtool/xdebug-helper/　下载Xdebug helper
 #### 离线安装的方法：
@@ -17,5 +18,6 @@
 #### 用解压缩工具将ZIP格式的文件解压
 #### 解压后得到的文件如下图：
 #### 打开chrome扩展程序管理页面（更多工具->拓展程序),点击“加载已解压的扩展程序”。
+#### 下载phpstorm后
 
 
