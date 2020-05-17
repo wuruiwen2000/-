@@ -21,3 +21,37 @@
 #### 下载phpstorm后
 
 
+
+
+### 题目三
+### 安装、调试并使用PHP/python的一种ORM框架的使用，并编写自己的测试案例与代码
+什么是ORM框架：对象关系映射（Object Relational Mapping，简称ORM）是一种为了解决面向对象与关系数据库存在的互不匹配的现象的技术。 简单的说，ORM是通过使用描述对象和数据库之间映射的元数据，将程序中的对象自动持久化到关系数据库中。本质上就是将数据从一种形式转换到另外一种形式。ORM提供了所有SQL语句的生成，代码人员远离了数据库概念。从一个概念需求(例如一个HQL)映射为一个SQL语句，并不需要什么代价，连1%的性能损失都没有。真正的性能损失在映射过程中，更具体地讲，是在对象实例化的过程中。
+### PHP的ORM框架
+- READBEAN框架的下载： 
+在https://redbeanphp.com/index.php?p=/download网页中下载Download RedBeanPHP 5 mysql,解压后得到一个txt和一个rb-mysql.php
+- 调试及使用：
+-- 需要：php
+-- 在命令行中输入echo dram.php，notepad.exe dram.php创建php文件
+-- 在该php文件中键入测试代码，代码如下：
+require'rb-sql.php';
+R::setup();
+$bean = R::dispense('email');
+$bean->subject = 'Read this email';
+$bean->date = date('Y-m-d H:i:s', time());
+$id = R::store($bean);
+$email = R::load('email', $id);
+var_dump($email);
+
+
+
+
+
+
+
+
+参考：https://www.jianshu.com/p/243168fa358d
+https://www.oschina.net/p/redbeanphp/related?lang=0&p=21&sort=view
+
+
+
+
