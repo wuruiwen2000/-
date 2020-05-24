@@ -1,5 +1,5 @@
 ### 题目一
-1.完成数据库设计案例分析一中其他概念设计
+### 1.完成数据库设计案例分析一中其他概念设计
 #### 1)用户信息实体集，其属性有：用户编号、用户名、登录密码、真实姓名、性别、地址邮编、电话号码、电子邮件、注册时间
 ![image](https://github.com/wuruiwen2000/-/blob/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%AE%9E%E4%BD%93%E9%9B%86.PNG)
 #### 2)管理员实体集，其属性有：管理员账号、密码
@@ -9,9 +9,12 @@
 #### 4)图书评论实体集。其属性有:评论编号,图书编号,说明,评论,用户编号,评论日期
 ![image](https://github.com/wuruiwen2000/-/blob/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E5%9B%BE%E4%B9%A6%E8%AF%84%E8%AE%BA%E5%AE%9E%E4%BD%93%E9%9B%86.PNG)
 #### 5)订单实体集。其属性有:用户编号,订单号,书号,订购数,总计,订购者编号。
-![image]
-
-
+![image](https://github.com/wuruiwen2000/-/blob/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E8%AE%A2%E5%8D%95%E5%AE%9E%E4%BD%93%E9%9B%86.PNG)
+#### 6）图书分类实体。其属性有:类型编号,类别名称,说明。
+![image](https://github.com/wuruiwen2000/-/tree/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A)
+#### 7）图书订购者详情实体集。其属性有:订购者编号,邮寄地址,邮编,移动电话,邮寄 备注,邮寄方法,付款方法,订购日期,是否要发票。
+![image]（https://github.com/wuruiwen2000/-/tree/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A）
+### 2.完成数据库设计案例分析一中其他逻辑设计与物理实施
 
 ### 题目二
 对于设计案例分析一中的系统，完善其功能，考虑增加如下功能：
