@@ -13,7 +13,7 @@
 #### 6）图书分类实体。其属性有:类型编号,类别名称,说明。
 ![image](https://github.com/wuruiwen2000/-/tree/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A)
 #### 7）图书订购者详情实体集。其属性有:订购者编号,邮寄地址,邮编,移动电话,邮寄 备注,邮寄方法,付款方法,订购日期,是否要发票。
-![image]（https://github.com/wuruiwen2000/-/tree/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A）
+![image](https://github.com/wuruiwen2000/-/tree/master/lecture10%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A）
 ### 2.完成数据库设计案例分析一中其他逻辑设计与物理实施
 
 ### 题目二
