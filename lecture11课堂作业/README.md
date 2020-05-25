@@ -54,3 +54,4 @@ alias配置总结：
 第三部分是/usr/html/color，表示你上传项目的路径，放在这里。  
 默认根目录配置总结：  
 将以下的代码修改为如下图：
+![image](https://github.com/wuruiwen2000/-/blob/master/lecture11%E8%AF%BE%E5%A0%82%E4%BD%9C%E4%B8%9A/%E6%A0%B9%E7%9B%AE%E5%BD%95%E9%85%8D%E7%BD%AE.PNG)
