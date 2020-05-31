@@ -21,7 +21,14 @@ CREATE TABLE `message` (
 `reply` VARCHAR( 1000 ) NOT NULL 
 )
 
-登录页面设计：send.php
+#### 整体实践：
+##### ->先进入网站login.php
 #### 注意：想要登录进页面，需要先在数据库的表admin里面，添加好用户名和密码（“coconut”——“test”），之后就可以在网页中登录了
-->manage.php
+##### ->进行用户登录，进入manage.php
+##### -->可以回复留言，进入reply.php
+##### -->可以删除留言，以下为删除成功页面
+##### ->点击“注销登录”，回到logout.php
+##### ->直接留言，进入send.php
+##### ->查看留言结果，进入index.php
+##### ->回复留言，（注意：必须提前登录好！）进入reply.php
 
