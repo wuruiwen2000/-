@@ -29,9 +29,11 @@ CREATE TABLE `message` (
 ##### ->进行用户登录，进入manage.php
 ![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%AE%A1%E7%90%86%E5%91%98%E7%99%BB%E9%99%86%E7%AE%A1%E7%90%86%E7%95%99%E8%A8%80manage%E7%95%8C%E9%9D%A2.PNG)
 ##### -->可以回复留言，进入reply.php
+![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E5%9B%9E%E5%A4%8D%E7%BB%93%E6%9E%9C.PNG)
 ##### -->可以删除留言，以下为删除成功页面
 ##### ->点击“注销登录”，回到logout.php
 ##### ->直接留言，进入send.php
 ##### ->查看留言结果，进入index.php
+![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E5%9B%9E%E5%A4%8D%E7%BB%93%E6%9E%9C.PNG)
 ##### ->回复留言，（注意：必须提前登录好！）进入reply.php
 
