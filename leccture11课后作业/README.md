@@ -34,6 +34,7 @@ CREATE TABLE `message` (
 ##### ->点击“注销登录”，回到logout.php
 ##### ->直接留言，进入send.php
 ##### ->查看留言结果，进入index.php
+![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%95%99%E8%A8%80%E6%9D%BF%E5%85%A8%E4%BD%93%E5%86%85%E5%AE%B9.PNG)
 ![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/reply%E7%95%8C%E9%9D%A2.PNG)
 ##### ->回复留言，（注意：必须提前登录好！）进入reply.php
 
