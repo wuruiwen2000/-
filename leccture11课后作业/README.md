@@ -22,8 +22,12 @@ CREATE TABLE `message` (
 
 #### 整体实践：
 ##### ->先进入网站login.php
+![iamage](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.PNG)
 #### 注意：想要登录进页面，需要先在数据库的表admin里面，添加好用户名和密码（“coconut”——“test”），之后就可以在网页中登录了
+![iamge](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.PNG)
+
 ##### ->进行用户登录，进入manage.php
+![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%AE%A1%E7%90%86%E5%91%98%E7%99%BB%E9%99%86%E7%AE%A1%E7%90%86%E7%95%99%E8%A8%80manage%E7%95%8C%E9%9D%A2.PNG)
 ##### -->可以回复留言，进入reply.php
 ##### -->可以删除留言，以下为删除成功页面
 ##### ->点击“注销登录”，回到logout.php
