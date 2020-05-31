@@ -22,7 +22,7 @@ CREATE TABLE `message` (
 
 #### 整体实践：
 ##### ->先进入网站login.php
-![iamage](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.PNG)
+![iamage](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/login%E7%95%8C%E9%9D%A2.PNG)
 #### 注意：想要登录进页面，需要先在数据库的表admin里面，添加好用户名和密码（“coconut”——“test”），之后就可以在网页中登录了
 ![iamge](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.PNG)
 
