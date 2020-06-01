@@ -30,3 +30,8 @@ xdebug.remote_host = "127.0.0.1"
 xdebug.trace_output_dir = "D:\must\tmp"
 #### 3.重启apache,查看phpinfo,如果有Xdebug显示，则成功拥有了xdebug
 成功页面如下：
+### xdebug步骤如下：
+#### 打开文件（open）->设置断点（红点）
+#### Configurations，配置服务器信息，添加项目调试开发地址，如截图：
+#### 添加PHP Web Application->name:应用名称/server:服务器信息/StrartURL:开始从哪个进入，点击臭虫按钮会跳转的网址
+#### 点击RUN->Xdebug
