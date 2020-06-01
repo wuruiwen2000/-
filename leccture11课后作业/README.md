@@ -37,6 +37,8 @@ CREATE TABLE `message` (
 ![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E5%88%A0%E9%99%A4%E7%95%8C%E9%9D%A2.PNG)
 ##### ->点击“注销登录”，回到logout.php
 ##### ->直接留言，进入send.php
+###### 留言成功结果如下：
+![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%95%99%E8%A8%80%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.PNG)
 ##### ->查看留言结果，进入index.php
 ![image](https://github.com/wuruiwen2000/-/blob/master/leccture11%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/%E7%95%99%E8%A8%80%E6%9D%BF%E5%85%A8%E4%BD%93%E5%86%85%E5%AE%B9.PNG)
 
