@@ -1,0 +1,45 @@
+CREATE database q1;
+
+use q1;
+
+CREATE TABLE Student 
+(Sno CHAR(9) PRIMARY KEY, 
+Sname CHAR(20) UNIQUE, 
+Ssex CHAR(2)); 
+alter table student add(lesson  CHAR(10));
+
+CREATE TABLE Lesson 
+(Lname CHAR(10) UNIQUE, 
+Sno CHAR(10) PRIMARY KEY, 
+Teachername CHAR(20)
+); 
+
+CREATE TABLE Teacher 
+(Tname CHAR(10) UNIQUE, 
+Tno CHAR(10) PRIMARY KEY, 
+Teachlesson CHAR(10)
+); 
+
+CREATE TABLE Design
+(Dname CHAR(10) UNIQUE, 
+Designstudentname CHAR(20) PRIMARY KEY
+); 
+
+CREATE TABLE DTeacher
+(DTname CHAR(10) UNIQUE, 
+Designname CHAR(20),
+Directstudent CHAR(20)  PRIMARY KEY,
+); 
+
+ALTER TABLE Student ADD INDEX Inf ( Sno,Sname );
+
+ALTER TABLE Teacher
+ADD CONSTRAINT L FOREIGN KEY (Teachlesson) REFERENCES Lesson (Lname);
+
+ALTER TABLE Student
+ADD CONSTRAINT FOREIGN KEY (Sname) REFERENCES DTeacher (Directstudent);
+
+ALTER TABLE Design
+ADD CONSTRAINT FOREIGN KEY (Designname) REFERENCES DTeacher (Dname);
+
+
