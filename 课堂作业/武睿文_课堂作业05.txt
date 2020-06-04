@@ -1,0 +1,23 @@
+1.SQL简单的查询：
+SELECT LastName,FirstName FROM Persons
+
+"Persons" 表:
+Id	LastName	FirstName	Address	City
+1	Adams	John	Oxford Street	London
+2	Bush	George	Fifth Avenue	New York
+3	Carter	Thomas	Changan Street	Beijing
+结果：
+LastName	FirstName
+Adams	John
+Bush	George
+Carter	Thomas
+
+2.查询结果返回元组的排序
+如学生表 
+select Sname from S Order by Age
+
+3.进行模糊查询
+SELECT * FROM [user] WHERE u_name LIKE '%三%'
+SELECT * FROM [user] WHERE u_name LIKE '_三_'
+SELECT * FROM [user] WHERE u_name LIKE '[张李王]三'
+SELECT * FROM [user] WHERE u_name LIKE '[^张李王]三'
