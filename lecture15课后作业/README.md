@@ -1,6 +1,6 @@
 #### 完成分类修改页面的ORM操作改造（文章总共有author,title,class,publishtime，ID）
 代码如下：
-<?php
+(<?php
 // 选择数据库
 include('conn.php');
 
@@ -20,5 +20,5 @@ mysqli_query($conn,"UPDATE termbase SET
 			WHERE id = '$id'") 
 			
 or die('添加数据出错：'.mysqli_error($conn)); 
-？>
-完成文章添加、修改的ORM操作改造 
+？>)
+### 完成文章添加、修改的ORM操作改造 
