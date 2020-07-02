@@ -21,4 +21,4 @@ mysqli_query($conn,"UPDATE termbase SET
 			
 or die('添加数据出错：'.mysqli_error($conn)); 
 ？>
-完成文章添加、修改的ORM操作改造
+完成文章添加、修改的ORM操作改造 
