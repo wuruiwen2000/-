@@ -22,7 +22,8 @@ mysqli_query($conn,"UPDATE termbase SET
 or die('添加数据出错：'.mysqli_error($conn)); 
 ？>)
 ### 完成文章添加、修改的ORM操作改造 （文章总共有author,title,class,publishtime，ID）
-<?php
+代码如下：
+（<?php
 // 连接mysql
 $link = @mysql_connect('localhost:3304','root','root') or die("提示：数据库连接失败！");
 // 选择数据库
